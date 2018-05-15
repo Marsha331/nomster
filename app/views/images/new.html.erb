@@ -1,0 +1,6 @@
+<%= simple_form_for [@place, @image] do |f| %>
+  <%= f.input :caption %>
+  <%= f.input :file %>
+
+  <%= f.submit 'Create', class: 'btn btn-primary' %>
+<% end %>
