@@ -22,6 +22,15 @@
 </div>
 <% end %>
 
+<% if place.images.present? %>
+<div class="col-12">
+  <p>
+    <% if place.images.last.image.present? %>
+    <%= place.images.last.image %>
+    <% end %>
+  </p>
+</div>
+<% end %>
 </div>
 <% end %>
 
