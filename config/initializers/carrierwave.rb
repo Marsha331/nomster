@@ -5,7 +5,7 @@ CarrierWave.configure do |config|                       # required              
     config.storage = :file
     config.enable_processing = false
   else
-      congig.storage = :fog/aws
+      config.storage = :fog/aws
       config.fog_credentials = {
          provider:              'AWS',                        # required
          aws_access_key_id:     ENV["AWS_ACCESS_KEY"],        # required
