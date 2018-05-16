@@ -46,10 +46,11 @@
 <!--image info -->
 <br />
 
-
+<% if @place.image.present? %>
 <div class="image">
   <%= image_tag @place.image.url %>
 </div> 
+<% end %>
 
 <div class= "float-right">
   <% if current_user && current_user == @place.user %>
